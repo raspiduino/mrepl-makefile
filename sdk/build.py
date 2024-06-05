@@ -13,9 +13,10 @@ def insert_int32(pos, value):
 with open(sys.argv[1], 'rb') as axf_file:
     axf = axf_file.read()
 
-with open("manifest.json", 'r') as config_file:
+with open("mre-makefile/manifest.json", 'r') as config_file:
     config = json.loads(config_file.read())
 
+'''
 # Find the location of the resources in the AXF file by searching for bytes
 # I know this is definitely not the best way, but it will do for now
 res_offset = axf.find(bytes([0x41,0x70,0x70,0x4C,0x6F,0x67,0x6F,0x2E,0x69,0x6D,0x67,0x00,0x30,0x00,0x00,0x00,0xE0]))
@@ -59,7 +60,7 @@ while True:
 
     if id == 0xFFFFFFFF:
         break
-
+'''
 # ______________________________________________________________________________
 #
 #  Tag insertion - helper functions

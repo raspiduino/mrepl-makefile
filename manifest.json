@@ -1,11 +1,11 @@
 {
-    "name": "MyMREApp",
-    "vendor": "Vendor",
-    "app_name_multilang": ["NameEnglish", "NameChineseS", "NameChineseT"],
-    "description": "Example MRE application",
+    "name": "mrepl",
+    "vendor": "gvl610",
+    "app_name_multilang": ["mrepl", "mrepl", "mrepl"],
+    "description": "Micropython for MRE",
     "version": 1,
 
-    "required_ram": 512,
-    "imsi": "1234567890",
+    "required_ram": 3072,
+    "imsi": "0123456789",
     "run_in_background": 0
 }
